@@ -1,0 +1,114 @@
+html {
+  margin: 0;
+  padding: 0;
+  width: 70vw;
+  margin: auto;
+  background: #323437;
+}
+
+/* #gameBoard {
+  width: 60%;
+  margin: auto;
+} */
+
+#difficulty ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  color: #e2b714;
+}
+
+#difficulty ul li :hover {
+  color: #646669;
+}
+
+.box {
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  -o-user-select: none;
+  user-select: none;
+  background: #7b7b7b;
+  margin: auto;
+}
+
+.clear {
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  -o-user-select: none;
+  user-select: none;
+  background: #7b7b7b;
+  min-height: 24px;
+  position: relative;
+  border: 1px solid white;
+}
+
+.tile {
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  -o-user-select: none;
+  user-select: none;
+  min-height: 24px;
+  width: 100%;
+}
+
+.tile img,
+.bomb img,
+.clear img,
+.flag img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.clear img {
+  opacity: 0;
+}
+
+.clear span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+}
+
+.bomb {
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  -o-user-select: none;
+  user-select: none;
+  background-size: cover;
+  min-height: 24px;
+  width: 100%;
+}
+
+#space-left {
+  font-size: 5rem;
+  color: white;
+}
+
+#final {
+  margin: auto;
+  text-align: center;
+}
+
+#win,
+#lose {
+  font-size: 10rem;
+}
+#win {
+  color: white;
+}
+
+#lose {
+  color: red;
+}
